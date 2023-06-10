@@ -25,9 +25,7 @@ app.post("/completions", async (req, res) => {
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
-      messages: [
-        { role: "user", content: "How far is the sun from the earth?" },
-      ],
+      messages: [{ role: "user", content: req.body.message }],
       max_tokens: 10,
     }),
   }; // end options object

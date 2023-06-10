@@ -1,42 +1,67 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,600;1,100&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  color: white;
+  background: url("./RecBot.png");
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.student-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(25, 6, 88, 0.377);
+  border: 1px solid rgba(0, 0, 255, 0);
+  gap: 20px;
+  padding: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.student-details {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.card {
-  padding: 2em;
+.name,
+.traits {
+  display: flex;
+  gap: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+input {
+  background-color: rgba(104, 43, 226, 0.172);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+input::placeholder {
+  color: rgb(192, 184, 184);
+}
+.generate {
+  background-color: rgba(226, 43, 43, 0.378);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(21, 90, 130, 0.556);
+  height: 100vh;
 }
