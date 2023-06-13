@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,600;1,100&family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* Prata*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,600;1,100&family=Prata&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,600;1,100&family=Prata&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,600;1,100&family=Prata&family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,33 +10,31 @@
 }
 
 body {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: Prata, Arial, Helvetica, sans-serif;
   color: white;
   background: url("./RecBot.png");
 }
 
 .student-details-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  background-color: rgba(25, 6, 88, 0.377);
+  background-color: rgba(187, 184, 194, 0.842);
   border: 1px solid rgba(0, 0, 255, 0);
-  gap: 20px;
-  padding: 100px;
+  gap: 10px;
+
+  padding: 50px;
+  margin: 60px auto;
+  width: 90vw;
+  height: max-content;
 }
 
 .student-details {
-  justify-content: center;
-  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.name,
-.traits {
-  display: flex;
   gap: 20px;
 }
 
@@ -58,10 +60,35 @@ input::placeholder {
 }
 
 .response {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
   background-color: rgba(21, 90, 130, 0.556);
-  height: 100vh;
+
+  font-size: 1.7rem;
+
+  font-family: DM Sans;
+  line-height: 120%;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  margin: 10px;
+
+  border: 1px solid rgba(138, 85, 68, 0.61);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255, 127, 80, 0.342);
+}
+
+li:nth-child(3n) {
+  border: 1px solid rgba(7, 75, 36, 0.508);
+
+  background-color: rgba(80, 255, 153, 0.342);
+}
+li:nth-child(3n-1) {
+  border: 1px solid rgba(47, 7, 53, 0.714);
+
+  background-color: rgba(235, 80, 255, 0.342);
 }
