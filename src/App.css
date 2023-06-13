@@ -92,3 +92,25 @@ li:nth-child(3n-1) {
 
   background-color: rgba(235, 80, 255, 0.342);
 }
+
+.info {
+  font-size: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  border-radius: 10px;
+  padding: 6px;
+  color: rgba(94, 28, 4, 0.851);
+  text-transform: lowercase;
+  background-color: rgba(255, 127, 80, 0.289);
+}
+
+.info i {
+  padding-right: 10px;
+  color: rgba(94, 28, 4, 0.851);
+  font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+  /* ul {
+    flex-direction: column;
+  } */
+}

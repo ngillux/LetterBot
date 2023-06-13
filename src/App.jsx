@@ -89,6 +89,7 @@ function App() {
           />
 
           <h1>Traits</h1>
+
           <input
             type="text"
             placeholder="type traits ..."
@@ -97,6 +98,9 @@ function App() {
             }}
             onKeyDown={handleKey}
           />
+          <span className="info">
+            <i class="fa-solid fa-circle-info"></i>Hit enter to add traits.
+          </span>
           {check.length >= 0 ? (
             <ul>
               {check.map((trait, index) => {
